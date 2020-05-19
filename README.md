@@ -1,4 +1,4 @@
-# Run Docker on WSL with a VirtualBo'd Daemon (w/MTLS)
+# Run Docker on WSL with a VirtualBox'd Daemon (w/MTLS)
 
 I'm a fan of Windows, Ubuntu, and Docker. I'm not so much a fan of Hyper-V (I have never really been able to get the settings right to have a seamless experience with any of the operating systems I've installed). I am a big fan and also incredibly comfortable with VirtualBox since I've used it for...I dunno...umpteen (?) years. I also like the WSL integration Microsoft has put in to Windows, but it obviously lacks a full out-of-the-box kernel experience, so you can't run the Docker daemon from within it. Docker Desktop for Windows essentially uses a Hyper-V backend (read: "virtual machine") and connects Docker binaries (that the installer drops in WSL/Powershell/Cmd) to the Docker Daemon through some magic that I don't care to unpack (`<austin powers voice>`***or do I?***`</austin powers voice>`).
 
