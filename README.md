@@ -72,11 +72,11 @@ From within the VirtualBox instance (Ubuntu Server) running the Docker Daemon - 
 
 At this point, you ***could*** utilize this Docker daemon as is from your client application, but it's insecure and this is **NOT** recommended. In the next step, you will configure both the client and the server to utilize MTLS to establish a connection to the daemon.
 
-## Secure Route to Docker Daemon with MTLS
+## Step 4: Secure Route to Docker Daemon with MTLS
 
 (placeholder)
 
-## Set DOCKER_HOST on WSL
+## Step 5: Set DOCKER_HOST on WSL
 Easiest way to persist this is to put the `DOCKER_HOST` global variable into your `~/.bash_profile` script. If you don't have one, create one (`touch ~/.bash_profile`), then: 
 
 ```
