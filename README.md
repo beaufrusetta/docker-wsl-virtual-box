@@ -55,7 +55,7 @@ From within the VirtualBox instance (Ubuntu Server) running the Docker Daemon - 
     # /etc/systemd/system/docker.service.d/startup_options.conf
     [Service]
     ExecStart=
-    ExecStart=/usr/bin/dockerd -h fd:// -H tcp://0.0.0.0:2376
+    ExecStart=/usr/bin/dockerd -H fd:// -H tcp://0.0.0.0:2376
     ```
 
 2. Reload the configuration:
