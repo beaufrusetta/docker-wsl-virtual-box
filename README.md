@@ -52,6 +52,11 @@ From within the VirtualBox instance (Ubuntu Server) running the Docker Daemon - 
 1. Create a file at `/etc/systemd/system/docker.service.d/startup_options.conf` with the following content:
 
     ```
+    you@server:~$ sudo mkdir -p /etc/systemd/system/docker.service.d
+    you@server:~$ sudo vi /etc/systemd/system/docker.service.d/startup_options.conf
+    ```
+
+    ```
     # /etc/systemd/system/docker.service.d/startup_options.conf
     [Service]
     ExecStart=
